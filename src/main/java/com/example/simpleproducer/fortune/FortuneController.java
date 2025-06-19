@@ -12,7 +12,7 @@ public class FortuneController {
         this.fortuneService = fortuneService;
     }
 
-    @RequestMapping("/")
+    @RequestMapping({"/", "/fortune"})
     String getFortune(){
         return fortuneService.getFortune();
     }
